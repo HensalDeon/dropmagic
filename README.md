@@ -7,6 +7,3 @@ This package provides a JavaScript function to enable drag and drop file upload 
 You can install this package via npm:
    ```bash
    npm install dropmagic
-You can install this package via npm:
-   ```bash
-   npm install dropmagic
