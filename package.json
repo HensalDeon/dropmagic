@@ -1,6 +1,6 @@
 {
   "name": "dropmagic",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a drag/drop and upload image package for specific use case.",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/HensalDeon/dropmagic.git"
   },
-  "keywords": ["drag-and-drop", "file-upload", "npm-package", "image-upload"],
+  "keywords": [
+    "drag-and-drop",
+    "file-upload",
+    "npm-package",
+    "image-upload"
+  ],
   "author": "hensal",
   "license": "ISC",
   "bugs": {
