@@ -1,4 +1,4 @@
-const setupDragAndDrop = (dropRegionId, statusTextId, optionsBtnId, uploadBtnId, overlayId, successBtnId, pendingBtnId) => {
+function setupDragAndDrop(dropRegionId, statusTextId, optionsBtnId, uploadBtnId, overlayId, successBtnId, pendingBtnId) {
     const dropRegion = document.getElementById(dropRegionId);
     const statusText = document.getElementById(statusTextId);
     const optionsBtn = document.getElementById(optionsBtnId);
@@ -138,16 +138,6 @@ const setupDragAndDrop = (dropRegionId, statusTextId, optionsBtnId, uploadBtnId,
 
         reader.readAsDataURL(imageFile);
     };
-};
-document.addEventListener("DOMContentLoaded", () => {
-    const dropRegions = document.querySelectorAll(".dropRegion");
-    dropRegions.forEach((dropRegion, index) => {
-        const overlayId = `overlay${index}`;
-        const statusTextId = `statusText${index}`;
-        const optionsBtnId = `optionsBtn${index}`;
-        const uploadBtnId = `uploadBtn${index}`;
-        const successBtnId = `successBtn${index}`;
-        const pendingBtnId = `pendingBtn${index}`;
-        setupDragAndDrop(dropRegion.id, statusTextId, optionsBtnId, uploadBtnId, overlayId, successBtnId, pendingBtnId);
-    });
-});
+}
+window.setupDragAndDrop = setupDragAndDrop;
+
