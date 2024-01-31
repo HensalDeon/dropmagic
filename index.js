@@ -36,7 +36,7 @@ function setupDragAndDrop(dropRegionId, statusTextId, optionsBtnId, uploadBtnId,
             handleFiles(files);
         }
     });
-
+    // upload files using button triggering
     uploadBtn.addEventListener("click", function () {
         fileInput.click();
         formObject = uploadBtn.closest("form");
